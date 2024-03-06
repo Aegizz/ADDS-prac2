@@ -9,7 +9,7 @@ class MoveSelector{
         MoveSelector(){
         }
         Move * selectMove(std::string moveName){
-            Move * move;
+            Move * move = NULL;
             if (moveName == "Rock"){
                 move = new Rock();
             } else if (moveName == "Scissors"){
