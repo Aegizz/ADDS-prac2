@@ -10,7 +10,7 @@ class Zombie: public Move{
         Zombie(){
             wins.push_back("Pirate");
             wins.push_back("Monkey");
-        };
+        }
 
 };
 #endif
