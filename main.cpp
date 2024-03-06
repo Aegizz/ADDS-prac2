@@ -5,7 +5,7 @@
 #include "Rock.h"
 #include "Paper.h"
 #include "Scissors.h"
-
+#include <iostream>
 
 int main(){
     Referee ref = Referee();
@@ -13,6 +13,12 @@ int main(){
     Player * p2 = new Human("Player 2");
 
     Player * win = new Human();
-    ref.refGame(p1, p2);
+    win = ref.refGame(p1,p2);
+    if (win){
+        std::cout << win->getName() << " wins.";
+    } else {
+        std::cout << "It's a Tie.";
+
+    }
     return 1;
 }

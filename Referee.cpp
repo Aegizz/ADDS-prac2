@@ -13,7 +13,6 @@ Player * Referee::refGame(Player * player1, Player * player2){
         move2 = player2->makeMove();
     }
     if (move1->getName() == move2->getName()){
-        cout << "It's a Tie.";
         return NULL;
     }
     if (move1->compareMove(move2)){
