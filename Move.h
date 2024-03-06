@@ -5,7 +5,7 @@
 class Move{
     protected:
         std::string name;
-        std::vector<string> wins;
+        std::vector<std::string> wins;
     public:
         virtual std::string getName();
         bool compareMove(Move * move);
