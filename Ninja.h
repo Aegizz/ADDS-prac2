@@ -8,14 +8,9 @@ class Ninja: public Move{
             return "Ninja";
         }
         Ninja(){
-
+            wins.push_back("Pirate");
+            wins.push_back("Zombie");
         };
-        bool compareMove(Move * move){
-            if (move->getName() == "Pirate" || move->getName() == "Zombie"){
-                return true;
-            } else {
-                return false;
-            }
-        }
+
 };
 #endif

@@ -9,14 +9,7 @@ class Paper: public Move{
             return "Paper";
         }
         Paper(){
-
-        }
-        bool compareMove(Move * move){
-            if (move->getName() == "Rock"){
-                return true;
-            } else {
-                return false;
-            }
+            wins.push_back("Rock");
         }
 
 };

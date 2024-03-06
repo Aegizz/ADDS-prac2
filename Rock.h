@@ -8,14 +8,7 @@ class Rock: public Move{
             return "Rock";
         }
         Rock(){
-
+            wins.push_back("Scissors");
         };
-        bool compareMove(Move * move){
-            if (move->getName() == "Scissors"){
-                return true;
-            } else {
-                return false;
-            }
-        }
 };
 #endif

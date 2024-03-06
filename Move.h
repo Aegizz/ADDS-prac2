@@ -1,13 +1,13 @@
 #ifndef MOVE_H
 #define MOVE_H
 #include <string>
-using namespace std;
-
+#include <vector>
 class Move{
     protected:
-        string name;
+        std::string name;
+        std::vector<string> wins;
     public:
-        virtual string getName();
-        virtual bool compareMove(Move * move) = 0;
+        virtual std::string getName();
+        bool compareMove(Move * move);
 };
 #endif

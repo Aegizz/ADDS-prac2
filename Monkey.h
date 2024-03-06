@@ -1,4 +1,5 @@
 #include "Move.h"
+#include <algorithm>
 #ifndef MONKEY_H
 #define MONKEY_H
 
@@ -8,14 +9,9 @@ class Monkey: public Move{
             return "Monkey";
         }
         Monkey(){
-
+            wins.push_back("Ninja");
+            wins.push_back("Robot");
         };
-        bool compareMove(Move * move){
-            if (move->getName() == "Ninja" || move->getName() == "Robot"){
-                return true;
-            } else {
-                return false;
-            }
-        }
+
 };
 #endif

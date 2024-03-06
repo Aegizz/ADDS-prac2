@@ -8,14 +8,9 @@ class Zombie: public Move{
             return "Zombie";
         }
         Zombie(){
-
+            wins.push_back("Pirate");
+            wins.push_back("Monkey");
         };
-        bool compareMove(Move * move){
-            if (move->getName() == "Pirate" || move->getName() == "Monkey"){
-                return true;
-            } else {
-                return false;
-            }
-        }
+
 };
 #endif

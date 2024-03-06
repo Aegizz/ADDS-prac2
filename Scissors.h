@@ -9,14 +9,8 @@ class Scissors: public Move{
             return "Scissors";
         }
         Scissors(){
+            wins.push_back("Paper");
+        }
 
-        }
-        bool compareMove(Move * move){
-            if (move->getName() == "Paper"){
-                return true;
-            } else {
-                return false;
-            }
-        }
 };
 #endif
